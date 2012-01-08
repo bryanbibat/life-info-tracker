@@ -1,13 +1,15 @@
-Life Info Tracker
+# Life Info Tracker
 
-Track Expenses
+## Track Expenses
 
-Accounts - where our money is allocated
+**Accounts** - where our money is allocated
+
 * Name
 * Description
 * Initial Value
 
-Transactions
+**Transactions**
+
 * Name
 * Description
 * Amount
@@ -16,7 +18,8 @@ Transactions
 * Executed At
 * Category Id
 
-Transaction Categories
+**Transaction Categories**
+
 * Name
 * Description
 
