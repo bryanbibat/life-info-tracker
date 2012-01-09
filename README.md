@@ -18,7 +18,7 @@
 * Executed At
 * Category Id
 
-**Transaction Categories**
+**Categories**
 
 * Name
 * Description
