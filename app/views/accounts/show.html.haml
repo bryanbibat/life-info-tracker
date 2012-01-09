@@ -1,0 +1,15 @@
+%p#notice= notice
+
+%p
+  %b Name:
+  = @account.name
+%p
+  %b Description:
+  = @account.description
+%p
+  %b Initial value:
+  = number_to_currency @account.initial_value
+
+= link_to 'Edit', edit_account_path(@account)
+\|
+= link_to 'Back', accounts_path
