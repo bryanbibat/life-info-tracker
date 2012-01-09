@@ -8,10 +8,12 @@ gem 'rails', '3.1.3'
 gem 'sqlite3'
 gem 'haml'
 
-group :development do
+group :development, :test do
   gem 'haml-rails'
   gem 'ruby_parser'
   gem 'hpricot'
+  gem 'capybara'
+  gem 'rspec-rails'
 end
 
 # Gems used only for assets and not required
