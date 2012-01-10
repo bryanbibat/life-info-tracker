@@ -2,6 +2,8 @@
 
 ## Track Expenses
 
+### Data Model
+
 **Accounts** - where our money is allocated
 
 * Name
@@ -23,3 +25,7 @@
 * Name
 * Description
 
+
+### Pending
+
+* change UTC to PHT

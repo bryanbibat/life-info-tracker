@@ -5,6 +5,7 @@
     %th Name
     %th Description
     %th Initial value
+    %th Effective value
     %th
     %th
     %th
@@ -14,6 +15,7 @@
       %td= account.name
       %td= account.description
       %td= number_to_currency account.initial_value
+      %td= number_to_currency account.effective_value
       %td= link_to 'Show', account
       %td= link_to 'Edit', edit_account_path(account)
       %td= link_to 'Destroy', account, :confirm => 'Are you sure?', :method => :delete

@@ -1,0 +1,31 @@
+%h1 Listing transactions
+
+%table
+  %tr
+    %th Name
+    %th Description
+    %th Amount
+    %th Source
+    %th Destination
+    %th Executed at
+    %th Category
+    %th
+    %th
+    %th
+
+  - @transactions.each do |transaction|
+    %tr
+      %td= transaction.name
+      %td= transaction.description
+      %td= transaction.amount
+      %td= transaction.source_display
+      %td= transaction.destination_display
+      %td= transaction.executed_at
+      %td= transaction.category_display
+      %td= link_to 'Show', transaction
+      %td= link_to 'Edit', edit_transaction_path(transaction)
+      %td= link_to 'Destroy', transaction, :confirm => 'Are you sure?', :method => :delete
+
+%br
+
+= link_to 'New Transaction', new_transaction_path

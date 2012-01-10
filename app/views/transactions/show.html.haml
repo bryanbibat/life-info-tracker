@@ -1,0 +1,27 @@
+%p#notice= notice
+
+%p
+  %b Name:
+  = @transaction.name
+%p
+  %b Description:
+  = @transaction.description
+%p
+  %b Amount:
+  = @transaction.amount
+%p
+  %b Source:
+  = @transaction.source_display
+%p
+  %b Destination:
+  = @transaction.destination_display
+%p
+  %b Executed at:
+  = @transaction.executed_at
+%p
+  %b Category:
+  = @transaction.category_display
+
+= link_to 'Edit', edit_transaction_path(@transaction)
+\|
+= link_to 'Back', transactions_path
