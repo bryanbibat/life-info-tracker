@@ -1,0 +1,25 @@
+!!!
+%html
+  %head
+    %title Personal Life Info Tracker
+    = stylesheet_link_tag    "application"
+    = javascript_include_tag "application"
+    = csrf_meta_tags
+  %body
+    .topbar
+      .topbar-inner
+        .container
+          %h3= link_to "Life Info Tracker", root_path
+          %ul.nav
+            %li{ class: (controller.controller_name == "pages" ? "active" : nil)}= link_to "Home", root_path
+            %li{ class: (controller.controller_name == "transactions" ? "active" : nil)}= link_to "Transactions", transactions_path
+            %li{ class: (controller.controller_name == "accounts" ? "active" : nil)}= link_to "Accounts", accounts_path
+            %li{ class: (controller.controller_name == "categories" ? "active" : nil)}= link_to "Categories", categories_path
+
+    .container
+      - if notice
+        .alert-message.block-message.success= notice
+      - if alert
+        .alert-message.block-message.error= alert
+      
+      = yield

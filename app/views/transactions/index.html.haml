@@ -3,7 +3,6 @@
 %table
   %tr
     %th Name
-    %th Description
     %th Amount
     %th Source
     %th Destination
@@ -16,8 +15,7 @@
   - @transactions.each do |transaction|
     %tr
       %td= transaction.name
-      %td= transaction.description
-      %td= transaction.amount
+      %td= number_to_currency transaction.amount
       %td= transaction.source_display
       %td= transaction.destination_display
       %td= l transaction.executed_at

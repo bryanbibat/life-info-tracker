@@ -6,26 +6,26 @@
         - @transaction.errors.full_messages.each do |msg|
           %li= msg
 
-  .field
+  .clearfix
     = f.label :name
-    = f.text_field :name
-  .field
+    .input= f.text_field :name
+  .clearfix
     = f.label :description
-    = f.text_area :description
-  .field
+    .input= f.text_area :description
+  .clearfix
     = f.label :amount
-    = f.text_field :amount
-  .field
+    .input= f.text_field :amount
+  .clearfix
     = f.label :source_id, "Source"
-    = f.collection_select :source_id, Account.all, :id, :name, prompt: "-Income-"
-  .field
+    .input= f.collection_select :source_id, Account.all, :id, :name, prompt: "-Income-"
+  .clearfix
     = f.label :destination_id, "Destination"
-    = f.collection_select :destination_id, Account.all, :id, :name, prompt: "-Expense-"
-  .field
+    .input= f.collection_select :destination_id, Account.all, :id, :name, prompt: "-Expense-"
+  .clearfix
     = f.label :executed_at
-    = f.datetime_select :executed_at
-  .field
+    .input= f.datetime_select :executed_at
+  .clearfix
     = f.label :category_id, "Category"
-    = f.collection_select :category_id, Category.all, :id, :name
+    .input= f.collection_select :category_id, Category.all, :id, :name
   .actions
     = f.submit 'Save'
