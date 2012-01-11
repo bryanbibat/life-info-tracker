@@ -2,7 +2,7 @@ class TransactionsController < ApplicationController
   # GET /transactions
   # GET /transactions.json
   def index
-    @transactions = Transaction.all
+    @transactions = Transaction.order("executed_at DESC")
 
     respond_to do |format|
       format.html # index.html.erb
