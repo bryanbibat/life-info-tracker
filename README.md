@@ -1,5 +1,9 @@
 # Life Info Tracker
 
+## Videos
+
+Screencasts of me coding this basic program can be found [here](http://www.youtube.com/playlist?list=PL8FA7120F31F16508).
+
 ## Track Expenses
 
 ### Data Model
