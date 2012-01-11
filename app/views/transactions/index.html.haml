@@ -20,7 +20,7 @@
       %td= transaction.amount
       %td= transaction.source_display
       %td= transaction.destination_display
-      %td= transaction.executed_at
+      %td= l transaction.executed_at
       %td= transaction.category_display
       %td= link_to 'Show', transaction
       %td= link_to 'Edit', edit_transaction_path(transaction)

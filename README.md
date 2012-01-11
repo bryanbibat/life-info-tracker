@@ -32,4 +32,3 @@ Screencasts of me coding this basic program can be found [here](http://www.youtu
 
 ### Pending
 
-* change UTC to PHT
